@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    background: linear-gradient(to bottom right, #000099 0%, #33cccc 72%);
+    padding: 20px 90px;
+    height: 660px;
+    position: relative;
+}
+
+.container .logo{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+.container .logo img{
+    width: 100px;
+    height: 100px;
+}
+
+.container .card .logo span{
+    position: relative;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 3rem;
+    background: -webkit-linear-gradient(#f00, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container .card .logo:before{
+    position: absolute;
+    content: '';
+    width: 70%;
+    height: 2px;
+    background-color: gray;
+    right: 0;
+}
+
+.container .card .content{
+    display: flex;
+}
+
+.container .card .content .desc{
+    padding: 10px 20px;
+}
+
+.container .card .content .desc h3{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container .card .content .desc p{
+    margin-top: 10px;
+    font-size: .8rem;
+    color: #fff;
+}
+
+.container .card .content .desc .att{
+    position: relative;
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.container .card .content .desc .att li{
+    position: relative;
+}
+
+.container .card .content .desc .att li::before{
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: gray;
+    bottom: 50%;
+}
+
+.container .card .content .desc .skills{
+    margin-top: 10px;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.container .card .content .desc .skills .cards{
+    position: relative;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.09);
+    height: 300px;
+    position: relative;
+    box-shadow: 1px 20px 10px 1px rgba(0, 0, 0, 0.4);
+}
+
+.container .card .content .desc .skills .cards img{
+    width: 100%;
+    height: 200px;
+}
+
+.container .card .content .desc .skills .cards .images-text{
+    position: relative;
+    padding: 6px 10px;
+    width: 100%;
+    background-color: #14a6b1;
+    overflow: hidden;
+}
+
+.container .card .content .desc .skills .cards .images-text:before{
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.09);
+    bottom: 0;
+    right: -20px;
+    transform: rotate(300deg) translateX(40px);
+}
+
+.container .card .content .desc .skills .cards .images-text h4{
+    text-transform: capitalize;
+    color: #d6dfe5;
+}
+
+.container .card .content .desc .skills .cards .images-text p{
+    text-transform: capitalize;
+    font-size: .8rem;
+    transform: translateY(-10px);
+}
+
+.container .card .content .desc .skills .cards .images-text i, span{
+    text-transform: capitalize;
+    color: #d6dfe5;
+}
+
+.container .card .content .desc .skills li:nth-child(2) .cards{
+    height: 300px;
+    background: url('thund.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container .card .content .desc .skills li:nth-child(2) .cards h4{
+    text-transform: capitalize;
+    padding: 10px 10px;
+    font-size: 1.5rem;
+    color: #d6dfe5;
+}
+
+.container .card .content .desc .skills li:nth-child(2) .cards img{
+    z-index: 100;
+    position: absolute;
+}
+
+.container .card .content .desc .skills li:nth-child(2) .cards .images-text{
+    padding: 5px 10px;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+}
+
+.container .card .content .desc .skills li:nth-child(2) .cards .images-text p{
+    font-size: 1.1rem;
+}
+
+.container .card .content .desc .skills li:nth-child(2) .cards .images-text h5{
+    font-size: 1.1rem;
+    margin-top: -10px;
+}
+
+.container .card .content .desc .skills li:nth-child(2) .cards .images-text h5{
+    font-size: 1.1rem;
+    margin-top: -10px;
+}
+
+.container .card .content .hashira-images{
+    transform: translateX(-90px);
+    position: relative;
+}
+
+.container .card .content .hashira-images .btns{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    position: relative;
+    width: 90%;
+    margin-left: 20px;
+}
+
+.container .card .content .hashira-images .btns button{
+    background-color: transparent;
+    color: #fff;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 250px;
+    cursor: pointer;
+}
+
+.container .card .content .hashira-images .btns button:nth-child(2){
+    right: 20px;
+}
+
+.container .card .content .hashira-images ul{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.container .card .content .hashira-images li:nth-child(1){
+    transform: translateX(70px);
+    opacity: 50%;
+    padding-top: 20px;
+}
+
+.container .card .content .hashira-images li:nth-child(3){
+    transform: translateX(-70px);
+    opacity: 50%;
+    padding-top: 20px;
+}
+
+.container .card .content .hashira-images li:nth-child(1) img{
+    width: 300px;
+    height: 350px;
+}
+
+.container .card .content .hashira-images li:nth-child(2) img{
+    width: 300px;
+    height: 450px;
+}
+
+.container .card .content .hashira-images li:nth-child(3) img{
+    width: 300px;
+    height: 350px;
+}
+
+
+.container .card .content .hashira-images li.active img:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.nav-skill{
+    position: absolute;
+    right: 5%;
+    bottom: 40px;
+    z-index: 10;
+}
+
+.nav-skill ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+}
+
+.nav-skill h3{
+    color: #d6dfe5;
+}
+
+.nav-skill ul li:hover{
+    transform: scale(1.1);
+    color: #fff;
+}
+
+.nav-skill i{
+    color: #000;
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, .3);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+
+
